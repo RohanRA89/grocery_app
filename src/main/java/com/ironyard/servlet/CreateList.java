@@ -4,6 +4,7 @@ import com.ironyard.com.ironyard.service.GroceryService;
 import com.ironyard.data.GroceryItem;
 import com.ironyard.data.IronYardUser;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -26,5 +27,9 @@ public class CreateList extends HttpServlet {
         IronYardUser user = (IronYardUser) request.getSession().getAttribute("ironyard_user");
         List<GroceryItem> listCreatedItem = gs.getAll(user);
         request.setAttribute("groceryList",listCreatedItem);
+
+        String nextJSP = "/home.jsp";
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+        dispatcher.forward(request,response);
     }
 }

@@ -80,7 +80,7 @@
             </div>
 </c:if>
             <h1>Create New Item</h1>
-            <form class="form-horizontal" action="/create" method="post">
+            <form class="form-horizontal" action="/create.jsp" method="post">
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="name">Name:</label>
                     <div class="col-sm-10">

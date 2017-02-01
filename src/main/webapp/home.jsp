@@ -75,8 +75,8 @@
         <div class="col-sm-8 text-left">
             <h1>Welcome To Grocery List</h1>
             <ul>
-                <c:forEach items="${groceryList}" var="anItem">
-                    <li><c:out value="${anItem.name}"/>,<c:out value="${anItem.quanitity}"/>,@ <c:out value="${anItem.price}"/> </li>
+                <c:forEach items="${groceryList}" var="GroceryItem">
+                    <li><c:out value="${GroceryItem.name}"/>,<c:out value="${GroceryItem.quanitity}"/>,@ <c:out value="${GroceryItem.price}"/> </li>
                 </c:forEach>
             </ul>
             <hr>
