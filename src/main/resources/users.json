@@ -3,5 +3,8 @@
     "username":"skipper.jason@gmail.com",
     "displayname":"Jason",
     "password":"1234abc"
-  }
+  },
+  {"username":"rohanra89@gmail.com",
+    "displayname": "Rohan",
+    "password": "w00t123"}
 ]

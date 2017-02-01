@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,11 +75,9 @@
         <div class="col-sm-8 text-left">
             <h1>Welcome To Grocery List</h1>
             <ul>
-                <li>Tomatoes, 12 @ $3.95 on isle 7</li>
-                <li>Tomatoes, 12 @ $3.95 on isle 7</li>
-                <li>Tomatoes, 12 @ $3.95 on isle 7</li>
-                <li>Tomatoes, 12 @ $3.95 on isle 7</li>
-                <li>Tomatoes, 12 @ $3.95 on isle 7</li>
+                <c:forEach items="${groceryList}" var="anItem">
+                    <li><c:out value="${anItem.name}"/>,<c:out value="${anItem.quanitity}"/>,@ <c:out value="${anItem.price}"/> </li>
+                </c:forEach>
             </ul>
             <hr>
 

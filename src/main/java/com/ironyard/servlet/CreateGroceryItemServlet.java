@@ -15,7 +15,7 @@ import java.io.IOException;
 /**
  * Created by jasonskipper on 1/26/17.
  */
-@WebServlet(name = "CreateGroceryItemServlet", urlPatterns = "/create")
+@WebServlet(name = "CreateGroceryItemServlet", urlPatterns = "/list")
 public class CreateGroceryItemServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // get data from request
